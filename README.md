@@ -4,7 +4,7 @@
 
 本仓库包含《编译原理》课程的 3 个实验/作业项目，均为课程学习用途。
 
-### 1) `Compiler_Principles_Homework`
+### 1) `Compiler_Principles_Lab1`
 - **作业性质**：数据结构与表达式处理基础作业。
 - **核心内容**：使用顺序栈实现中缀表达式转后缀表达式，并对后缀表达式进行求值。
 - **解决的问题**：
@@ -12,7 +12,7 @@
   - 利用栈结构完成运算符优先级处理与表达式求值流程；
   - 支持小数运算，并处理除零等基本错误场景。
 - **如何启动**：
-  - 打开 `Compiler_Principles_Homework/Compiler_Principles_Homework.sln`；
+  - 打开 `Compiler_Principles_Lab1/Compiler_Principles_Lab1.sln`；
   - 在 Visual Studio 中将可执行项目设为启动项并运行（F5 / Ctrl+F5）。
 - **输入是什么**：
   - 控制台输入一条算术中缀表达式（支持 `+ - * /`、括号、小数）；
@@ -61,7 +61,7 @@
 
 This repository contains three projects from a **Compiler Principles** course.
 
-### 1) `Compiler_Principles_Homework`
+### 1) `Compiler_Principles_Lab1`
 - **Type**: foundational assignment on data structures and expression processing.
 - **What it does**: implements infix-to-postfix conversion and postfix evaluation using a sequential stack.
 - **Problems solved**:
@@ -69,7 +69,7 @@ This repository contains three projects from a **Compiler Principles** course.
   - Handles operator precedence and evaluation flow with a stack;
   - Supports decimal numbers and basic runtime checks (e.g., division by zero).
 - **How to run**:
-  - Open `Compiler_Principles_Homework/Compiler_Principles_Homework.sln`;
+  - Open `Compiler_Principles_Lab1/Compiler_Principles_Lab1.sln`;
   - Set the executable project as startup project and run it (F5 / Ctrl+F5).
 - **Input**:
   - A console infix arithmetic expression (`+ - * /`, parentheses, decimals supported);
