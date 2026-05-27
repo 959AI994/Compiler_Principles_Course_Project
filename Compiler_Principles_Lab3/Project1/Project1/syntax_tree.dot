@@ -1,0 +1,52 @@
+digraph SyntaxTree {
+    "E'" [label="E'", shape=box];
+    "T" [label="T", shape=box];
+    "T'" [label="T'", shape=box];
+    "F" [label="F", shape=box];
+    "id" [label="id", shape=box];
+    "*" [label="*", shape=box];
+    "(" [label="(", shape=box];
+    ")" [label=")", shape=box];
+    "+" [label="+", shape=box];
+    "-" [label="-", shape=box];
+    "/" [label="/", shape=box];
+    "number" [label="number", shape=box];
+
+    "E'" -> "T" [label="right"];
+    "T" -> "T" [label="left"];
+    "T" -> "F" [label="left"];
+    "F" -> "id" [label="left"];
+    "T" -> "T'" [label="right"];
+    "T'" -> "*" [label="left"];
+    "T'" -> "F" [label="right"];
+    "T" -> "(" [label="left"];
+    "T" -> "E" [label="right"];
+    "E" -> "T" [label="left"];
+    "E" -> "+" [label="left"];
+    "E" -> "T" [label="right"];
+    "T" -> "F" [label="left"];
+    "F" -> "number" [label="left"];
+    "T" -> "T'" [label="right"];
+    "T'" -> "E'" [label="right"];
+    "T'" -> "+" [label="left"];
+    "T'" -> "T" [label="right"];
+    "T" -> "F" [label="right"];
+    "F" -> "id" [label="left"];
+    "T'" -> ")" [label="left"];
+    "T'" -> "/" [label="left"];
+    "T'" -> "F" [label="right"];
+    "F" -> "number" [label="left"];
+    "E'" -> "-" [label="left"];
+    "E'" -> "T" [label="right"];
+    "T" -> "F" [label="left"];
+    "F" -> "number" [label="left"];
+    "T'" -> ")" [label="left"];
+    "T'" -> "/" [label="left"];
+    "T'" -> "F" [label="right"];
+    "F" -> "number" [label="left"];
+    "E'" -> "-" [label="left"];
+    "E'" -> "T" [label="right"];
+    "T" -> "F" [label="left"];
+    "F" -> "number" [label="left"];
+}
+

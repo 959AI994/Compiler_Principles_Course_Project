@@ -1,0 +1,45 @@
+Step	Stack	Input	Action
+1	0	id * ( number + id ) / number - number $	s5
+2	0 id 5	* ( number + id ) / number - number $	r8
+3	0 F	* ( number + id ) / number - number $	3
+4	0 F 3	* ( number + id ) / number - number $	r6
+5	0 T	* ( number + id ) / number - number $	2
+6	0 T 2	* ( number + id ) / number - number $	s9
+7	0 T 2 * 9	( number + id ) / number - number $	s4
+8	0 T 2 * 9 ( 4	number + id ) / number - number $	s16
+9	0 T 2 * 9 ( 4 number 16	+ id ) / number - number $	r9
+10	0 T 2 * 9 ( 4 F	+ id ) / number - number $	13
+11	0 T 2 * 9 ( 4 F 13	+ id ) / number - number $	r6
+12	0 T 2 * 9 ( 4 T	+ id ) / number - number $	12
+13	0 T 2 * 9 ( 4 T 12	+ id ) / number - number $	r3
+14	0 T 2 * 9 ( 4 E	+ id ) / number - number $	11
+15	0 T 2 * 9 ( 4 E 11	+ id ) / number - number $	s22
+16	0 T 2 * 9 ( 4 E 11 + 22	id ) / number - number $	s15
+17	0 T 2 * 9 ( 4 E 11 + 22 id 15	) / number - number $	r8
+18	0 T 2 * 9 ( 4 E 11 + 22 F	) / number - number $	13
+19	0 T 2 * 9 ( 4 E 11 + 22 F 13	) / number - number $	r6
+20	0 T 2 * 9 ( 4 E 11 + 22 T	) / number - number $	27
+21	0 T 2 * 9 ( 4 E 11 + 22 T 27	) / number - number $	r1
+22	0 T 2 * 9 ( 4 E	) / number - number $	11
+23	0 T 2 * 9 ( 4 E 11	) / number - number $	s21
+24	0 T 2 * 9 ( 4 E 11 ) 21	/ number - number $	r7
+25	0 T 2 * 9 F	/ number - number $	19
+26	0 T 2 * 9 F 19	/ number - number $	r4
+27	0 T	/ number - number $	2
+28	0 T 2	/ number - number $	s10
+29	0 T 2 / 10	number - number $	s6
+30	0 T 2 / 10 number 6	- number $	r9
+31	0 T 2 / 10 F	- number $	20
+32	0 T 2 / 10 F 20	- number $	r5
+33	0 T	- number $	2
+34	0 T 2	- number $	r3
+35	0 E	- number $	1
+36	0 E 1	- number $	s8
+37	0 E 1 - 8	number $	s6
+38	0 E 1 - 8 number 6	$	r9
+39	0 E 1 - 8 F	$	3
+40	0 E 1 - 8 F 3	$	r6
+41	0 E 1 - 8 T	$	18
+42	0 E 1 - 8 T 18	$	r2
+43	0 E	$	1
+44	0 E 1	$	acc
